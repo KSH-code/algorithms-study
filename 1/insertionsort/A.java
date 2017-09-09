@@ -35,7 +35,7 @@ class A{
             bw.append((p+1)+" "+a[p]);
             bw.append("\n");
         }
-        bw.flush();
+        bw.flush(); 
     }
     // public static void main(String[] args) throws IOException{
     //     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
