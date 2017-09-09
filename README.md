@@ -1,5 +1,5 @@
 # algorithms-study
-* 장소: 
+* 장소:  
 ## To do list
 (참고) codeground의 Note의 알고리즘목차를 기반으로 공부한다.<br>
 1. 각자 알고리즘을 하나씩 선택한다.
