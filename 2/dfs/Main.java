@@ -29,7 +29,7 @@ class Main {
         result++;
         a[x][y]=false;
         boolean temp[][] = new boolean[N+1][M+1];
-        for(int i=1;i<=N;i++){ //백트랙킹 하기위해
+        for(int i=1;i<=N;i++){
             temp[i]=a[i].clone();
         }
         if(x+1<=N&&temp[x+1][y]){
