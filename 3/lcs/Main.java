@@ -25,17 +25,20 @@ public class Main {
         int x=B.length-1,y=A.length-1;
         int temp=lcs[B.length - 1][A.length - 1];
         StringBuffer result = new StringBuffer();
+        int check2;
         while(x>0&&y>0){
-            if(lcs[x-1][y-1]!=temp){
-                result.append(A[y]);
+            check2 = Math.max(lcs[x][y - 1], Math.max(lcs[x - 1][y], lcs[x - 1][y - 1]));
+            if(lcs[x-1][y-1]==check2){
+                if(A[y]==B[x])
+                    result.append(A[y]);
                 x--;
-                temp--;
                 y--;
             }else{
-                if(y > 0 && (x == 0 || lcs[x][y-1] >= lcs[x-1][y]))
+                if(check2 == lcs[x][y-1]){
                     y--;
-                else
+                }else{
                     x--;
+                }
             }
         }
         result=result.reverse();
