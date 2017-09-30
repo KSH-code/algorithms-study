@@ -33,7 +33,7 @@ public class Main {
             System.out.print(String.valueOf(here) + ' '); // 지금 위치를 출력하고 
             for (int i = 0; i < adj_list[here].size(); i++) { // 인접한 점 즉, u -> here 에서 u를 찾아낸다.
                 int there = adj_list[here].get(i); // u가 있으면, 
-                ind[there]--;// u랑 연결된 점의 개수를 1개 빼주고
+                ind[there]--; // u랑 연결된 점의 개수를 1개 빼주고
                 if (ind[there] == 0) { // u랑 연결된 점의 개수가 0일시
                     q.add(there); // 큐에 u를 담는다.
                 }
