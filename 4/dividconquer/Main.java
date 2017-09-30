@@ -33,7 +33,7 @@ public class Main {
         
         for(int i = row;i<=row + mN / count - 1;i++){
             for(int j = col;j<=col + mN / count - 1;j++){
-                if(check != mTree[i][j] && f){
+                if(check != mTree[i][j]){
                     count *= 2;
                     bw.write("(");
                     quadTree(row, col, count); // LT
