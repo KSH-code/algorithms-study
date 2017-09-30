@@ -31,7 +31,6 @@ public class Main {
             return;
         char check = mTree[row][col];
         
-        boolean f = true;
         for(int i = row;i<=row + mN / count - 1;i++){
             for(int j = col;j<=col + mN / count - 1;j++){
                 if(check != mTree[i][j] && f){
@@ -42,13 +41,10 @@ public class Main {
                     quadTree(row + mN / count, col, count); // LB
                     quadTree(row + mN / count, col + mN / count, count); // RB
                     bw.write(")");
-                    f = false;
                     return;
                 }
             }
         }
-        if(f){
-            bw.write(check);
-        }
+        bw.write(check);
     }
 }
