@@ -1,9 +1,6 @@
 import java.io.*;
 import java.util.*;
 
-/**
- * 이해와 수정 필요함
- */
 class Node implements Comparable<Node> {
     int x, y; 
     // x는 v -> x 일때의 x이다.
@@ -18,7 +15,8 @@ class Node implements Comparable<Node> {
 
     @Override
     public int compareTo(Node arg0) { // 우선순위 체크 PriorityQueue
-        return this.y - arg0.y;
+        return this.y - arg0.y; // 1 - 3 -2 args가 더큼
+                                // 3 - 1  2 this가 더큼
     }
 }
 
