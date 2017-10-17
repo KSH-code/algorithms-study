@@ -16,6 +16,9 @@ class Node implements Comparable<Node>{
         return this.W - arg0.W; // 오름차순 정렬
     }
 }
+/**
+ * BOJ 1753 최단경로
+ */
 public class Main{
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
